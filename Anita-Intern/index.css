@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+#bars{
+    font-size: 30px;
+    float: right;
+    margin: 25px;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width:980px){
+    nav img{
+        padding-left: 40px;
+    }
+    
+    #bars{
+        display: block;
+    }
+
+    nav ul li a{
+        display: none;
+    }   
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:white;
+    height: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    top: 0;
+   width: 100%;
+   z-index:1;
+    
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    margin: 20px;
+    color: black;
+}
+nav ul li a:hover{
+    color: mediumvioletred;
+}
+.special{
+    color:  mediumvioletred;
+    text-decoration: dashed;
+}
+
+/* ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+} */
+
+.body{
+    min-height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(images/wit.jpg);
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size:cover;
+    background-position: center;
+    background-color: black;
+}
+.content{
+    color: white;
+    max-width: 498px;
+    font-style: bold;
+    position: relative;
+    top: 350px;
+    left: 100px;
+    justify-content: flex-start;
+    z-index: 2;
+}
+button{
+    background-color: rgb(255, 217, 0);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    margin:6px;
+}
+@media only screen and (max-width:480px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-style: none;
+        justify-content: center;
+        align-items: center;
+       min-height: 250vh;
+    }
+    .content p{
+        font-size: clamp(2rem, 1rem + 5vw, 3rem);
+    }
+    .content h1{
+        font-size: 30px;
+        display: flex;
+    }
+
+    .body .url{
+        background-position: center;
+
+    }
+}
+/* }
+@media  only screen and (min-width:1024px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-style: none;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    .content h1{
+        font-size: 20px;
+    }
+} */
+.new-page{
+    min-height: 100vh;
+    background-color: peachpuff;
+}
